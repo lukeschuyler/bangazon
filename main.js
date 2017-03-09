@@ -8,3 +8,23 @@ db.run('CREATE TABLE IF NOT EXISTS payment_options (PaymentOptionsId INTEGER PRI
 db.run('CREATE TABLE IF NOT EXISTS products (ProductId INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Price DECIMAL (20, 2))');
 db.run('CREATE TABLE IF NOT EXISTS orders (OrderId INTEGER PRIMARY KEY AUTOINCREMENT, CustomerId INT, PaymentOptionsId INT, PaidInFull TEXT)');
 db.run('CREATE TABLE IF NOT EXISTS order_line_items (OrderLineId INTEGER PRIMARY KEY AUTOINCREMENT, OrderId INT, ProductId INT)');
+
+const populateCustomers= () => {
+	const { customers } = require('./JSON/customers.json')
+
+	customers.forEach(cust => {
+		db.run(`INSERT INTO customer VALUES (
+			null,
+			"${cust.firstName}",
+			"${cust.lastName}",
+			"${cust.address}",
+			"${cust.city}",
+			"${cust.state}",
+			${cust.postalCode},
+			"${cust.phoneNumber}")`)
+	})
+}
+
+populateCustomers()
+
+// db.run('DROP TABLE customer')
