@@ -1,58 +1,20 @@
 {
-    "customers": [
+    "paymentOptions": [
         {
-            "firstName": "Hobo",
-            "lastName": "Massengill",
-            "address": "500 River Rd",
-            "city" : "Nashville",
-            "state" : "TN",
-            "postalCode" : "37205",
-            "phoneNumber" : "555-789-0123"
+            "name": "Cash",
+            "accountNumber": 908765
         },
         {
-            "firstName": "Johnny",
-            "lastName": "Tharp",
-            "address": "1224 Little Oak Ln",
-            "city" : "Honolulu",
-            "state" : "HI",
-            "postalCode" : "88374",
-            "phoneNumber" : "555-661-0223"
+            "name": "Credit Card",
+            "accountNumber": 123456
         },
         {
-            "firstName": "Jeff",
-            "lastName": "Reynolds",
-            "address": "1377 Oxton Dr",
-            "city" : "Austin",
-            "state" : "TX",
-            "postalCode" : "99823",
-            "phoneNumber" : "555-444-0193"
+            "name": "Venmo",
+            "accountNumber": 234567
         },
         {
-            "firstName": "Danny",
-            "lastName": "Surrett",
-            "address": "776 Hemingway Cir",
-            "city" : "New York",
-            "state" : "NY",
-            "postalCode" : "06789",
-            "phoneNumber" : "555-200-1145"
-        },
-        {
-            "firstName": "Daniel",
-            "lastName": "Jones",
-            "address": "4789 Ski Park Lane",
-            "city" : "Boston",
-            "state" : "MA",
-            "postalCode" : "66475",
-            "phoneNumber" : "555-120-9923"
-        },
-        {
-            "firstName": "Dustin",
-            "lastName": "Lanier",
-            "address": "988 Clark Blvd",
-            "city" : "Nashville",
-            "state" : "TN",
-            "postalCode" : "37215",
-            "phoneNumber" : "555-400-3772"
+            "name": "Paypal",
+            "accountNumber": 345678
         }
     ]
 }
